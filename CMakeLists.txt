@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.26)
-project(SpaceInvaders)
+project(SpaceInvaders
+    VERSION 1.0.0 DESCRIPTION "A C++ emulator of the classic arcade machine: Space Invaders!")
 
 set(CMAKE_CXX_STANDARD 20)
 
 include(FetchContent)
 FetchContent_Declare(
         Intel8080
-        INTEL8080_TESTS OFF
-        GIT_REPOSITORY "https://github.com/harrow22/Intel8080.git"
+        GIT_REPOSITORY "https://github.com/amelliyaa/intel8080.git"
 )
+set(INTEL8080_TESTS OFF)
 message(STATUS "Fetching Intel 8080 core...")
 FetchContent_MakeAvailable(Intel8080)
 message(STATUS "Fetched Intel 8080 core")
