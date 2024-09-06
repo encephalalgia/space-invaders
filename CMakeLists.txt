@@ -19,7 +19,7 @@ include(CPack)
 include(FetchContent)
 FetchContent_Declare(
         Intel8080
-        GIT_REPOSITORY "https://github.com/harrow22/Intel8080.git"
+        GIT_REPOSITORY "https://github.com/encephalalgia/intel8080.git"
 )
 set(INTEL8080_TESTS OFF)
 message(STATUS "Fetching Intel 8080 core...")
